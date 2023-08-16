@@ -19,6 +19,11 @@
 }
 
 
+*{ margin: 0px;
+    padding: 0px;
+}
+
+
 
 body{ 
     background-color: var(--cor1);
@@ -83,13 +88,16 @@ font-size: 3em;
 }
 
 main h2{ font-family: var(--fonte-android);
-color: black;
+color: rgb(238, 238, 243);
 font-size: 1.5em;
-background-image: linear-gradient(to right, var(--cor2), transparent);
-
+background-image: linear-gradient(to right, var(--cor3),  transparent);
+margin-top: 20px;
 
 }
 
+h2>#phc{
+    padding-top: 20px;
+}
 
 main p{ margin: 15px 0px 15px 0px;
     text-indent: 30px;
@@ -152,7 +160,7 @@ box-shadow: 3px 3px 10px;
 aside>ul{
   list-style-position: inside;
   columns: 2;
-  list-style-type: '\1F36C\00A0\00A0';
+  list-style-type: '\1F5F8\00A0\00A0';
 
 
 }
@@ -172,11 +180,6 @@ footer{
     color: white;
     text-align: center;
     padding: 5px;
-}
-*{ margin: 0px;
-    padding: 0px;
-
-
 }
 
 img.pequena{
