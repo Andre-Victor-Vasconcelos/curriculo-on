@@ -1,24 +1,20 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@font-face 
-{
-    font-family: Android;
-    src: url(fontes/idroid.otf) format('opentype');
-    font-weight: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 /*root são variáveis criadas por mim*/
 :root{
-    --cor1: #c5ebd6;
-    --cor2: #83e1ad ;
-    --cor3: #3ddc84;
-    --cor4: #2fa866;
-    --cor5: #1a5c37;
-    --cor6: #063d1e;
+    --cor1: #303232;
+    --cor2: #686b6c ;
+    --cor3: #00001d;
+    --cor4: #0d2c38;
+    --cor5: #1d1d39;
+    --cor6: #090722;
 
     --fonte-padrao: Arial, verdana, helvetica, sans-serif;
     --fonte-destaque: 'Bebas Neue', cursive;
-    --fonte-android: 'Android', cursive;
+    --fonte-android: 'Barriecito', cursive;;
 
 }
 
@@ -42,9 +38,9 @@ header{
 header> h1{ 
     margin-top: 30px;
     margin-bottom: 20px;
-    font-family: var(--fonte-destaque);
+    font-family: 'Press Start 2P', cursive; 
     color: white;
-    font-size: 3em;
+    font-size: 2em;
     text-shadow: 3px 3px 3px black;
 }
 header> p{ 
@@ -78,15 +74,17 @@ main img{
 
 }
 
+
 main h1{color: var(--cor5);
 font-family: var(--fonte-android);
+font-size: 3em;
 
 
 }
 
 main h2{ font-family: var(--fonte-android);
-color: var(--cor5);
-font-size: 1.3em;
+color: black;
+font-size: 1.5em;
 background-image: linear-gradient(to right, var(--cor2), transparent);
 
 
