@@ -40,6 +40,7 @@ header{
     padding-top: 40px;
 }
 
+
 header> h1{ 
     margin-top: 30px;
     margin-bottom: 20px;
@@ -61,7 +62,7 @@ header> p{
 
 main{
     background-color: white;
-    min-width: 300px;
+    min-width: 200px;
     max-width: 800px;
     margin: auto;
     padding: 20px;
@@ -137,6 +138,8 @@ nav{
     background-color: var(--cor5);
     box-shadow: 2px 2px 2px black;
     font-weight: bold;
+    width: 100% - 20.6px;
+
 
 }
 nav>a{
@@ -235,7 +238,7 @@ padding: 0 1vw;
 .item_galeria img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
 
 }
 
@@ -251,6 +254,74 @@ padding: 0 1vw;
 
 }
 
+.form {
+    width: 100%;
+    max-width: 32rem;
+    font-size: 1.125rem;
+    margin: 0 auto;
+  }
+  
+  .form label,
+  .form input,
+  .form textarea,
+  .form button {
+    display: block;
+    width: 100%;
+  }
+  
+  .form label {
+    color: #000000;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form input,
+  .form textarea {
+    font: inherit;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: border-color, box-shadow 0.2s;
+  
+  }
+  
+  .form textarea {
+    min-height: 13rem;
+    resize: vertical;
+  }
+  
+  .form input:hover,
+  .form input:focus,
+  .form textarea:hover,
+  .form textarea:focus {
+    outline: none;
+    color: #000000;
+    border-color: var(--cor2);
+    box-shadow: 0 0 0 3px var(--cor2);
+  }
+  
+  .form button {
+    display: block;
+    padding: 1rem;
+    background: var(--cor2);
+    color: aliceblue;
+    font: inherit;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .form button:hover,
+  .form button:focus {
+    outline: none;
+    background:var(--cor5);
+    color: white;
+  }
+
+
 @media (max-width: 520px) {
     
     aside>ul{
@@ -262,4 +333,57 @@ padding: 0 1vw;
       
       }
 
+}
+
+@media (min-width: 320px) {
+    
+.pequeno {
+display: none;     
+ }
+
+}
+
+@media (max-width: 320px) {
+    
+    .grande {
+     display: none;
+    
+    }
+
+    
+
+}
+
+
+
+
+details {
+  display: block;
+  width: 80%; /*Largura da caixa*/
+  margin: 10px auto;
+  background-color: #efefef;
+  padding: 10px;
+}
+
+/*Vai cor de fundo dos títulos*/
+summary {
+  display: block;
+background-image: linear-gradient(to right, #103060); 
+animation: colors 15s ease infinite;
+  color: rgb(82, 80, 80);
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+#linha p {
+  padding: 10px;
+  background-color: #efefef;
+}
+
+#linha[open] summary:after {
+  content: "-";
+  color: #ffffff;
 }
