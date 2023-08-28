@@ -466,20 +466,21 @@ animation: colors 15s ease infinite;
    
 }
 
+.menu-list2{
+  display: none;
+}
 
 
 }
 
 @media (min-width: 450px) {
   .menu-list {
-    border: 5px solid rgb(4, 4, 4);
-    box-shadow: 5px 5px 5px black ;
-    display: inline-block; /* Torna os itens do menu flexíveis */
+   display: none;
 
   }
 
   .menu ul li {
-    display: inline-block; /* Torna os itens do menu flexíveis */
+    display: block; /* Torna os itens do menu flexíveis */
     justify-content: space-around; /* Espaçamento uniforme entre os itens */
     padding: 0; /* Remove o padding padrão da lista */
     
