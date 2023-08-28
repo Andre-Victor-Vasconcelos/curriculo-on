@@ -132,17 +132,30 @@ main a:hover{
     color: var(--cor4);
 }
 
+span#burguer{
+background-color: #000000;
+color: white;
+display: block;
+text-align: center;
+padding: 10px;
+cursor: pointer;
+}
 
-nav{  
+span#burguer:hover{
+  background-color: gray;
+}
+
+menu{  
     padding: 10px;
     background-color: var(--cor5);
     box-shadow: 2px 2px 2px black;
     font-weight: bold;
     width: 100% - 20.6px;
+    display: none;
 
 
 }
-nav>a{
+menu>a{
     
     color: white;
     padding: 10px;
@@ -151,10 +164,52 @@ nav>a{
     transition-duration: 400ms;
 }
 
-nav>a:hover{
+menu>a:hover{
 background-color: #3ddc84;
 color:var(--cor6) ;
 }
+
+menu ul {
+list-style-type: none;
+}
+
+menu ul li a{
+display: block;
+padding: 10px;
+text-decoration: none;
+text-align: center;
+background-color: rgb(37, 36, 36);
+border-top: 2px solid gray;
+color: white;
+
+}
+
+menu ul li a:hover{
+background-color: #1d1d39;
+color: white;
+}
+
+/* Estilo para o menu horizontal */
+#itens ul {
+  list-style: none;
+  display: flex;
+  justify-content: left; /* Centraliza horizontalmente os itens */
+  margin: 0;
+  padding: 0;
+}
+
+#itens ul li {
+  margin: 0 2%; /* Espaçamento entre os itens */
+}
+
+/* Oculta o menu quando a largura é menor ou igual a 450px */
+@media (max-width: 450px) {
+  #itens {
+      display: none;
+  }
+}
+
+
 aside{
 background-color: var(--cor1);
 padding: 10px;
@@ -169,6 +224,7 @@ aside>ul{
 
 
 }
+
 
 aside>h3{
 
@@ -423,4 +479,13 @@ animation: colors 15s ease infinite;
 .item_galeria:hover{
     transform: scale(1.1);
 }
+}
+
+@media (max-width: 405px) {
+    
+ #itens #burguer{
+    display: none;
+    background-color: #3ddc84;
+}
+
 }
