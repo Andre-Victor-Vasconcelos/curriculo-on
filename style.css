@@ -489,6 +489,7 @@ animation: colors 15s ease infinite;
       flex-grow: 3;
       transition: transform 0.2s linear;
       margin-bottom: 5%;
+      margin-top: 2.5%;
       
   }
   
@@ -502,17 +503,26 @@ animation: colors 15s ease infinite;
   .item_galeria2:hover{
       transform: scale(1.1);
   }
+
+
+  div .eu{
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+  }
   
-  @media(max-width: 559px) {
+  @media(max-width: 594px) {
 
     .item_galeria2{
       width: 100px;
-      height: 150px;
+      height: 120px;
       border: 10px solid white;
       box-shadow: 5px 5px 5px black ;
       flex-grow: 3;
       transition: transform 0.2s linear;
-      margin-bottom: 5%;
+      margin-bottom: 7%;
       
   }
 
@@ -523,5 +533,74 @@ animation: colors 15s ease infinite;
     gap: 2vw;
     padding: 0 1vw;
     }
+
+    
+  div .eu{
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+    display: flex;
+  }
+    
+  }
+
+  @media(max-width: 423px) {
+
+    .item_galeria2{
+      width: 100px;
+      height: 120px;
+      border: 10px solid white;
+      box-shadow: 5px 5px 5px black ;
+      flex-grow: 3;
+      transition: transform 0.2s linear;
+      margin-bottom: 9%;
+      
+  }
+
+  .item_container2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    gap: 2vw;
+    padding: 0 1vw;
+    }
+
+    
+  div .eu{
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+    display: flex;
+  }
+    
+  }
+  @media(max-width: 373px) {
+
+    .item_galeria2{
+      width: 100px;
+      height: 120px;
+      border: 10px solid white;
+      box-shadow: 5px 5px 5px black ;
+      flex-grow: 3;
+      transition: transform 0.2s linear;
+      margin-bottom: 12%;
+      
+  }
+
+  .item_container2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    gap: 2vw;
+    padding: 0 1vw;
+    }
+
+    
+  div .eu{
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+    display: flex;
+  }
     
   }
