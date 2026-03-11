@@ -1,90 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+@charset "UTF-8";
 
-:root {
-    --bg-main: #f8fafc;
-    --primary: #1e293b;
-    --accent: #3b82f6;
-    --text: #334155;
-    --white: #ffffff;
-}
-
+/* Reset básico */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body { 
-    background-color: #e2e8f0; 
-    font-family: 'Inter', sans-serif; 
-    color: var(--text);
-    line-height: 1.6;
+    background-color: #f0f2f5; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
 }
 
-header { 
-    background: linear-gradient(135deg, #0f172a, #1e293b); 
-    padding: 3rem 1rem; 
-    text-align: center; 
-    color: var(--white);
+/* Header */
+header {
+    background: #1d1d39;
+    padding: 2rem;
+    text-align: center;
+    color: white;
 }
 
-header h1 { font-family: 'Inter', sans-serif; letter-spacing: -1px; }
-
-main { 
-    background-color: var(--white); 
-    max-width: 800px; 
-    margin: 2rem auto; 
-    padding: 2.5rem; 
-    border-radius: 12px; 
-    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); 
+/* Main Container */
+main {
+    background-color: white;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-h2 { 
-    color: var(--primary); 
-    border-bottom: 2px solid var(--accent); 
-    display: inline-block; 
-    margin: 2rem 0 1rem 0; 
+/* Títulos */
+h2 {
+    color: #1d1d39;
+    border-bottom: 2px solid #1d1d39;
+    padding-bottom: 10px;
+    margin: 20px 0;
 }
 
-/* Menu e Navegação */
-span#burguer { background-color: var(--primary); padding: 15px; cursor: pointer; color: white; }
-menu { background-color: var(--primary); padding: 1rem; }
-menu ul li a { color: white; text-decoration: none; display: block; padding: 10px; transition: 0.3s; }
-menu ul li a:hover { background-color: var(--accent); }
-
-/* Galeria de itens (Habilidades/Sobre) */
-.item_container2 { display: flex; flex-wrap: wrap; gap: 15px; margin-top: 20px; }
-.item_galeria2 { 
-    flex: 1 1 150px; 
-    border: 1px solid #e2e8f0; 
-    padding: 15px; 
-    border-radius: 8px; 
-    text-align: center; 
-    transition: 0.3s; 
-    text-decoration: none; 
-    color: var(--text);
+/* Menu Burger */
+span#burguer {
+    background-color: #1d1d39;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    display: none; /* Oculto por padrão em telas grandes */
 }
-.item_galeria2:hover { border-color: var(--accent); background: #f1f5f9; }
 
-/* Projetos */
-.item_container { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
-.item_galeria { 
-    width: 250px; border-radius: 8px; overflow: hidden; 
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-decoration: none; 
+/* Ajuste de responsividade para o seu menu original */
+@media (max-width: 450px) {
+    span#burguer { display: block; }
+    menu { display: none; }
 }
-.item_galeria:hover { transform: translateY(-5px); }
 
-/* Detalhes de Experiência */
-details { background: #f8fafc; border-left: 4px solid var(--accent); padding: 15px; border-radius: 4px; margin-bottom: 10px; }
-summary { font-weight: 600; cursor: pointer; outline: none; }
-
-/* Formulário Profissional */
-.form { margin-top: 2rem; }
-.form input, .form textarea { 
-    width: 100%; padding: 12px; margin-bottom: 15px; 
-    border: 1px solid #cbd5e1; border-radius: 6px; 
+/* Formulário */
+.form {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
 }
-.form button { 
-    background: var(--accent); color: white; padding: 12px 24px; 
-    border: none; border-radius: 6px; font-weight: 600; cursor: pointer; 
-}
-.form button:hover { background: #2563eb; }
 
-/* Footer */
-footer { text-align: center; padding: 2rem; color: #64748b; }
+.form label { display: block; margin-top: 10px; font-weight: bold; }
+.form input, .form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #1d1d39;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Detalhes */
+details {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+}
+summary { cursor: pointer; font-weight: bold; }
