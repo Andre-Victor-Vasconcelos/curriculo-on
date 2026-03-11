@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículo André Victor</title>
+    <title>Currículo ON</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
     <link rel="stylesheet" href="style.css">
 </head>
@@ -25,60 +25,60 @@
     </nav>
 
     <main>
-        <article>
-            <h2 id="QuemSouEu">Sobre Mim</h2>
-            <img class="foto-perfil" src="imagens/irina-blok.jpg" alt="Foto de perfil">
+        <h2 id="QuemSouEu">Home</h2>
+        <picture>
+            <img src="imagens/irina-blok.jpg" alt="Foto de perfil">
+        </picture>
 
-            <div class="item_container2">
-                <div class="item_galeria2">Idiomas</div>
-                <div class="item_galeria2">Idade</div>
-                <div class="item_galeria2">Formação</div>
-                <a class="item_galeria2" href="https://www.linkedin.com/in/andre-victor-on/" target="_blank">LinkedIn</a>
-            </div>
+        <div class="item_container2">
+            <a class="item_galeria2" href="#">Idiomas</a>
+            <a class="item_galeria2" href="#">Idade</a>
+            <a class="item_galeria2" href="#">Formação</a>
+            <a class="item_galeria2" href="https://www.linkedin.com/in/andre-victor-on/">LinkedIn</a>
+        </div>
 
-            <aside class="card">
-                <h3>Formação</h3>
-                <ul>
-                    <li><strong>Administração</strong> - Estácio/SE</li>
-                    <li><strong>Front-End</strong> - IFES/ES</li>
-                    <li><strong>Back-End</strong> - IFES/ES</li>
-                </ul>
-            </aside>
+        <aside>
+            <h3>Formação</h3>
+            <ul>
+                <li>BACHARELADO ADMINISTRAÇÃO - ESTÁCIO/SE</li>
+                <li>PROGRAMAÇÃO FRONT-END - IFES/ES</li>
+                <li>PROGRAMAÇÃO BACK-END - IFES/ES</li>
+            </ul>
+        </aside>
 
-            <h2 id="phc">Projetos</h2>
-            <div class="item_container">
-                <a class="item_galeria" href="https://andre-victor-vasconcelos.github.io/site-cordel/">Site Cordel</a>
-                <a class="item_galeria" href="https://andre-victor-vasconcelos.github.io/relogio_digital/">Relógio Digital</a>
-            </div>
+        <h2 id="phc">Projetos</h2>
+        <div class="item_container">
+            <a class="item_galeria" href="#"><span>Site Cordel</span></a>
+            <a class="item_galeria" href="#"><span>Relógio Digital</span></a>
+        </div>
 
-            <h2 id="ecf">Experiências</h2>
-            <section>
-                <details>
-                    <summary>Analista do Executivo - SEGER/ES</summary>
-                    <p>Atividades administrativas e logísticas de nível superior.</p>
-                </details>
-            </section>
+        <h2 id="ecf">Experiências</h2>
+        <section>
+            <details>
+                <summary>AGENTE DO EXECUTIVO - SEGER/ES (Abr/2024 - Atual)</summary>
+                <p>Atividades administrativas e logísticas de nível superior.</p>
+            </details>
+        </section>
 
-            <h2 id="contato">Contato</h2>
-            <form action="https://formsubmit.co/andrevasconcelos.sts@gmail.com" method="POST" class="form">
-                <input type="hidden" name="_captcha" value="false">
-                <label for="name">Nome</label>
-                <input type="text" name="name" id="name" required>
-                <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" required>
-                <label for="message">Mensagem</label>
-                <textarea name="message" id="message" required></textarea>
-                <button type="submit">Enviar E-mail</button>
-            </form>
-        </article>
+        <h2 id="contato">Contato</h2>
+        <form action="https://formsubmit.co/andrevasconcelos.sts@gmail.com" method="POST" class="form">
+            <input type="hidden" name="_captcha" value="false">
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" required>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required>
+            <label for="message">Mensagem</label>
+            <textarea name="message" id="message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
     </main>
 
     <footer><p>Criado por <strong>André Victor</strong></p></footer>
 
     <script>
         function clickMenu() {
-            const menu = document.getElementById('itens');
-            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            const itens = document.getElementById('itens');
+            itens.style.display = (itens.style.display === 'block') ? 'none' : 'block';
         }
     </script>
 </body>
