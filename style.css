@@ -303,72 +303,92 @@ padding: 0 1vw;
 
 }
 
+/* =========================================
+   ESTILOS DO FORMULÁRIO DE CONTATO
+   ========================================= */
+
 .form {
     width: 100%;
-    max-width: 32rem;
-    font-size: 1.125rem;
-    margin: 0 auto;
-  }
-  
-  .form label,
-  .form input,
-  .form textarea,
-  .form button {
+    max-width: 35rem; /* Um pouco mais largo para respirar melhor */
+    margin: 2rem auto;
+    padding: 2rem; /* Espaçamento interno */
+    background-color: var(--cor1); /* Fundo escuro combinando com o aside */
+    border-radius: 15px; /* Bordas mais arredondadas */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Sombra elegante */
+    box-sizing: border-box;
+}
+
+.form label,
+.form input,
+.form textarea,
+.form button {
     display: block;
     width: 100%;
-  }
-  
-  .form label {
-    color: #000000;
-    line-height: 1;
+    box-sizing: border-box; /* Garante que o padding não quebre a largura */
+}
+
+.form label {
+    color: white; /* Texto branco para contrastar com o fundo escuro */
+    font-family: var(--fonte-padrao);
+    font-weight: bold;
+    letter-spacing: 1px;
     margin-bottom: 0.5rem;
-  }
-  
-  .form input,
-  .form textarea {
+}
+
+.form input,
+.form textarea {
     font: inherit;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid transparent;
+    padding: 0.8rem; /* Campos um pouco mais gordinhos e confortáveis */
+    margin-bottom: 1.5rem;
+    border: 2px solid var(--cor2);
     border-radius: 8px;
-    transition: border-color, box-shadow 0.2s;
-  
-  }
-  
-  .form textarea {
-    min-height: 13rem;
+    background-color: #f4f4f9; /* Fundo levemente cinza/azulado claro */
+    color: #333;
+    transition: all 0.3s ease; /* Transição suave para o clique */
+}
+
+.form textarea {
+    min-height: 10rem;
     resize: vertical;
-  }
-  
-  .form input:hover,
-  .form input:focus,
-  .form textarea:hover,
-  .form textarea:focus {
+}
+
+/* Efeito quando o usuário clica/digita no campo */
+.form input:focus,
+.form textarea:focus {
     outline: none;
-    color: #000000;
-    border-color: var(--cor2);
-    box-shadow: 0 0 0 3px var(--cor2);
-  }
-  
-  .form button {
-    display: block;
+    border-color: var(--cor4);
+    box-shadow: 0 0 10px rgba(13, 44, 56, 0.8); /* Brilho usando sua --cor4 */
+    background-color: #ffffff;
+    transform: scale(1.01); /* Leve efeito de aproximação */
+}
+
+/* Estilo do botão de envio */
+.form button {
     padding: 1rem;
-    background: var(--cor2);
-    color: aliceblue;
-    font: inherit;
+    background-image: linear-gradient(to right, var(--cor3), var(--cor5)); /* Gradiente igual ao header */
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2rem;
+    font-weight: bolder;
     text-transform: uppercase;
+    letter-spacing: 2px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: 0.2s;
-  }
-  
-  .form button:hover,
-  .form button:focus {
-    outline: none;
-    background:var(--cor5);
-    color: white;
-  }
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efeito ao passar o mouse no botão */
+.form button:hover {
+    transform: translateY(-3px); /* O botão "levanta" */
+    box-shadow: 3px 6px 15px rgba(0, 0, 0, 0.6);
+    background-image: linear-gradient(to right, var(--cor5), var(--cor3)); /* Inverte o gradiente */
+}
+
+.form button:active {
+    transform: translateY(0); /* Efeito de clique afundando */
+}
 
 
 @media (max-width: 520px) {
