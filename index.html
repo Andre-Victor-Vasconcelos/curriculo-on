@@ -239,18 +239,24 @@ prestar suporte nas demais atividades da área</p>
 
     
 
-    <h2 class="area-12" id="contato"> Contato
-    </h2>
     <form action="https://formsubmit.co/andrevasconcelos.sts@gmail.com" method="POST" class="form">
-      <label style="margin-top: 5%;" for="name">Nome</label>
-      <input style="border-color: black; width: 95%;" type="text" name="name" id="name" required />
-      <label for="email">E-mail</label>
-      <input style="border-color: black; width: 95%;" type="email" name="email" id="email" required />
-      <label for="message">Mensagem</label>
-      <input style="border-color: black; height: 130px; width: 95%;" type="text" name="text" id="text" required />
+    <!-- Campo obrigatório para o FormSubmit não pedir captcha toda hora -->
+    <input type="hidden" name="_captcha" value="false">
+    <!-- Define a página de redirecionamento após envio (opcional) -->
+    <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
 
-      <button type="submit" style="font-weight: bolder;">Enviar</button>
-    </form>
+    <label for="name">Nome</label>
+    <input type="text" name="name" id="name" required />
+    
+    <label for="email">E-mail</label>
+    <input type="email" name="email" id="email" required />
+    
+    <label for="message">Mensagem</label>
+    <!-- Mudei o name para "message" para ficar padrão -->
+    <textarea name="message" id="message" required></textarea>
+
+    <button type="submit" style="font-weight: bolder;">Enviar</button>
+</form>
 
     
 </article>
