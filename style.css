@@ -1,8 +1,9 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,300&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,300&family=Press+Start+2P&display=swap');
+
 /*root são variáveis criadas por mim*/
 :root{
     --cor1: #303232;
@@ -15,14 +16,12 @@
     --fonte-padrao: Arial, verdana, helvetica, sans-serif;
     --fonte-destaque: 'Bebas Neue', cursive;
     --fonte-android: 'Barriecito', cursive;
-
 }
 
-
-*{ margin: 0px;
+*{ 
+    margin: 0px;
     padding: 0px;
 }
-
 
 html{
   scroll-behavior: smooth;
@@ -32,9 +31,7 @@ body{
     background-color: var(--cor1);
     font-family: var(--fonte-padrao);
     background-image: linear-gradient(to right, var(--cor1), var(--cor2) ) ;
-
 }
-
 
 header{
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
@@ -42,7 +39,6 @@ header{
     text-align: center;
     padding-top: 40px;
 }
-
 
 header> h1{ 
     margin-top: 30px;
@@ -52,10 +48,11 @@ header> h1{
     font-size: 1.8em;
     text-shadow: 3px 3px 3px black;
 }
+
 header> p{ 
     font-family: var(--fonte-destaque);
     color: white;
-    font-size: 1,2em;
+    font-size: 1.2em;
     font-family: var(--fonte-padrao);
     max-width: 600px;
     padding-right: 10px;
@@ -80,72 +77,62 @@ main{
 
 main img{
     width: 100%;
-
 }
 
-
-main h1{color: var(--cor5);
-font-family: var(--fonte-android);
-font-size: 3em;
-
-
+main h1{
+    color: var(--cor5);
+    font-family: var(--fonte-android);
+    font-size: 3em;
 }
 
-main h2{ font-family: var(--fonte-android);
-color: rgb(238, 238, 243);
-font-size: 1.8em;
-background-image: linear-gradient(to right, var(--cor3),  transparent);
-margin-top: 20px;
-
+main h2{ 
+    font-family: var(--fonte-android);
+    color: rgb(238, 238, 243);
+    font-size: 1.8em;
+    background-image: linear-gradient(to right, var(--cor3),  transparent);
+    margin-top: 20px;
 }
 
 h2>#phc{
     padding-top: 20px;
 }
 
-main p{ margin: 15px 0px 15px 0px;
+main p{ 
+    margin: 15px 0px 15px 0px;
     text-indent: 30px;
     line-height: 2em;
     font-size: 1em;
     text-align: justify;
-
-
-
-
 }
 
 main strong{
-
     color: var(--cor5);
     font-weight: bolder;
     padding: 2px;
-    
 }
 
 main a{
-
     text-decoration: none;
     font-weight: bold;
     background-color: var(--cor1);
     color: var(--cor5);
 }
-main a:hover{
 
+main a:hover{
     text-decoration: underline;
     color: var(--cor4);
 }
 
 span#burguer{
-background-color: var(--cor5);
-color: white;
-display: block;
-text-align: center;
-padding: 10px;
-cursor: pointer;
-border: 4px solid var(--cor1);
-border-style: groove;
-box-shadow: 3px 3px 3px black;
-
+    background-color: var(--cor5);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    border: 4px solid var(--cor1);
+    border-style: groove;
+    box-shadow: 3px 3px 3px black;
 }
 
 span#burguer:hover{
@@ -159,11 +146,9 @@ menu{
     font-weight: bold;
     width: 100% - 20.6px;
     display: none;
-
-
 }
+
 menu>a{
-    
     color: white;
     padding: 10px;
     text-decoration: none;
@@ -171,42 +156,38 @@ menu>a{
     transition-duration: 400ms;
 }
 
-
 menu ul {
-list-style-type: none;
-
-
+    list-style-type: none;
 }
 
 menu ul li a{
-display: block;
-padding: 10px;
-text-decoration: none;
-text-align: center;
-background-color: rgb(37, 36, 36);
-border-top: 2px solid gray;
-color: white;
-box-shadow: 3px 3px 3px black;
-border: 2px solid black;
-
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(37, 36, 36);
+    border-top: 2px solid gray;
+    color: white;
+    box-shadow: 3px 3px 3px black;
+    border: 2px solid black;
 }
 
 menu ul li a:hover{
-background-color: #1d1d39;
-color: white;
+    background-color: #1d1d39;
+    color: white;
 }
 
 /* Estilo para o menu horizontal */
 #itens ul {
   list-style: none;
   display: flex;
-  justify-content: left; /* Centraliza horizontalmente os itens */
+  justify-content: left; 
   margin: 0;
   padding: 0;
 }
 
 #itens ul li {
-  margin: 0 2%; /* Espaçamento entre os itens */
+  margin: 0 2%; 
 }
 
 /* Oculta o menu quando a largura é menor ou igual a 450px */
@@ -216,27 +197,21 @@ color: white;
   }
 }
 
-
 aside{
-background-color: var(--cor1);
-padding: 10px;
-border-radius: 10px;
-box-shadow: 3px 3px 10px;
-margin-bottom: 15px;
-
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px;
+    margin-bottom: 15px;
 }
 
 aside>ul{
   list-style-position: inside;
   columns: 2;
   list-style-type: '\2714\00A0\00A0';
-
-
 }
 
-
 aside>h3{
-
     background-color: var(--cor3);
     color: white;
     padding: 5px;
@@ -245,7 +220,6 @@ aside>h3{
 }
 
 footer{
-
     background-color: var(--cor5);
     color: white;
     text-align: center;
@@ -253,24 +227,21 @@ footer{
 }
 
 img.pequena{
-max-width: 350px;
-margin: auto;
-display: block;
+    max-width: 350px;
+    margin: auto;
+    display: block;
 }
 
 a.externo::after{
-
-content: '\1F517'
-
+    content: '\1F517'
 }
 
-
 .item_container{
-display: flex;
-flex-wrap: wrap;
-justify-content: space-evenly;
-gap: 2vw;
-padding: 0 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 0 1vw;
 }
 
 .item_galeria{
@@ -281,14 +252,12 @@ padding: 0 1vw;
     flex-grow: 1;
     transition: transform 0.2s linear;
     margin-bottom: 3%;
-    
 }
 
 .item_galeria img{
     width: 100%;
     height: 100%;
     object-fit: fill;
-
 }
 
 .item_galeria:hover{
@@ -300,7 +269,6 @@ padding: 0 1vw;
     width: 100%;
     margin-top: 2%;
     opacity: 85%;
-
 }
 
 /* =========================================
@@ -309,12 +277,12 @@ padding: 0 1vw;
 
 .form {
     width: 100%;
-    max-width: 35rem; /* Um pouco mais largo para respirar melhor */
+    max-width: 35rem; 
     margin: 2rem auto;
-    padding: 2rem; /* Espaçamento interno */
-    background-color: var(--cor1); /* Fundo escuro combinando com o aside */
-    border-radius: 15px; /* Bordas mais arredondadas */
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Sombra elegante */
+    padding: 2rem; 
+    background-color: var(--cor1); 
+    border-radius: 15px; 
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); 
     box-sizing: border-box;
 }
 
@@ -324,11 +292,11 @@ padding: 0 1vw;
 .form button {
     display: block;
     width: 100%;
-    box-sizing: border-box; /* Garante que o padding não quebre a largura */
+    box-sizing: border-box; 
 }
 
 .form label {
-    color: white; /* Texto branco para contrastar com o fundo escuro */
+    color: white; 
     font-family: var(--fonte-padrao);
     font-weight: bold;
     letter-spacing: 1px;
@@ -338,13 +306,13 @@ padding: 0 1vw;
 .form input,
 .form textarea {
     font: inherit;
-    padding: 0.8rem; /* Campos um pouco mais gordinhos e confortáveis */
+    padding: 0.8rem; 
     margin-bottom: 1.5rem;
     border: 2px solid var(--cor2);
     border-radius: 8px;
-    background-color: #f4f4f9; /* Fundo levemente cinza/azulado claro */
+    background-color: #f4f4f9; 
     color: #333;
-    transition: all 0.3s ease; /* Transição suave para o clique */
+    transition: all 0.3s ease; 
 }
 
 .form textarea {
@@ -352,20 +320,18 @@ padding: 0 1vw;
     resize: vertical;
 }
 
-/* Efeito quando o usuário clica/digita no campo */
 .form input:focus,
 .form textarea:focus {
     outline: none;
     border-color: var(--cor4);
-    box-shadow: 0 0 10px rgba(13, 44, 56, 0.8); /* Brilho usando sua --cor4 */
+    box-shadow: 0 0 10px rgba(13, 44, 56, 0.8); 
     background-color: #ffffff;
-    transform: scale(1.01); /* Leve efeito de aproximação */
+    transform: scale(1.01); 
 }
 
-/* Estilo do botão de envio */
 .form button {
     padding: 1rem;
-    background-image: linear-gradient(to right, var(--cor3), var(--cor5)); /* Gradiente igual ao header */
+    background-image: linear-gradient(to right, var(--cor3), var(--cor5)); 
     color: white;
     font-family: var(--fonte-padrao);
     font-size: 1.2rem;
@@ -379,62 +345,15 @@ padding: 0 1vw;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Efeito ao passar o mouse no botão */
 .form button:hover {
-    transform: translateY(-3px); /* O botão "levanta" */
+    transform: translateY(-3px); 
     box-shadow: 3px 6px 15px rgba(0, 0, 0, 0.6);
-    background-image: linear-gradient(to right, var(--cor5), var(--cor3)); /* Inverte o gradiente */
+    background-image: linear-gradient(to right, var(--cor5), var(--cor3)); 
 }
 
 .form button:active {
-    transform: translateY(0); /* Efeito de clique afundando */
+    transform: translateY(0); 
 }
-
-
-@media (max-width: 520px) {
-    
-    aside>ul{
-        list-style-position: inside;
-        columns: 1;
-        list-style-type: '\2714\00A0\00A0';
-        margin-left: 15vw;
-        margin-right: 15vw;
-      
-      }
-
-}
-
-@media (max-width: 406px) {
-    
-  aside>ul{
-      list-style-position: inside;
-      columns: 1;
-      list-style-type: '\2714\00A0\00A0';
-    }
-
-}
-
-
-@media (min-width: 350px) {
-    
-.pequeno {
-display: none;     
- }
-
-}
-
-@media (max-width: 350px) {
-    
-    .grande {
-     display: none;
-    
-    }
-
-    
-
-}
-
-
 
 /* =========================================
    ESTILOS DAS EXPERIÊNCIAS (Sanfona/Accordion)
@@ -443,17 +362,16 @@ display: none;
 details {
     display: block;
     width: 100%; 
-    max-width: 700px; /* Alinha bem com o resto do conteúdo */
+    max-width: 700px; 
     margin: 15px auto;
     background-color: #ffffff; 
     border-radius: 10px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-    border-left: 6px solid var(--cor4); /* Borda lateral para dar um charme */
+    border-left: 6px solid var(--cor4); 
     transition: all 0.3s ease;
-    overflow: hidden; /* Impede que o conteúdo vaze das bordas arredondadas */
+    overflow: hidden; 
 }
 
-/* Efeito de "pulo" e sombra ao passar o mouse no card inteiro */
 details:hover {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
     transform: translateY(-2px);
@@ -461,139 +379,52 @@ details:hover {
 
 summary {
     display: block;
-    background-image: linear-gradient(to right, var(--cor1), var(--cor2)); /* Segue o padrão do site */
+    background-image: linear-gradient(to right, var(--cor1), var(--cor2)); 
     color: white;
     padding: 15px 20px;
     cursor: pointer;
     font-size: 1.1em;
     font-weight: bold;
     text-align: center;
-    list-style: none; /* Remove a setinha preta padrão do HTML */
+    list-style: none; 
     transition: filter 0.3s ease;
     position: relative;
 }
 
-/* Remove a setinha padrão em navegadores baseados no Chrome/Safari */
 summary::-webkit-details-marker {
     display: none;
 }
 
-/* Efeito ao passar o mouse no título da experiência */
 summary:hover {
-    filter: brightness(1.2); /* Fica levemente mais iluminado */
+    filter: brightness(1.2); 
 }
 
-/* Muda a cor do título quando a caixa está aberta */
 details[open] summary {
     background-image: linear-gradient(to right, var(--cor4), var(--cor5));
     border-bottom: 2px solid var(--cor2);
 }
 
-/* Estilo do texto descritivo (O que você fez na experiência) */
 details p {
     padding: 20px;
     margin: 0;
-    color: #333; /* Texto escuro para facilitar a leitura */
+    color: #333; 
     font-size: 1em;
     line-height: 1.6em;
-    background-color: #f4f4f9; /* Fundo levemente cinza/azulado */
+    background-color: #f4f4f9; 
     text-align: justify;
-    text-indent: 0; /* Remove aquele recuo de parágrafo só para essa área */
+    text-indent: 0; 
 }
 
-/* =========================================
-   ÍCONE DE (+) E (-) DINÂMICO PELO CSS
-   ========================================= */
 summary::after {
-    content: '\2795'; /* Símbolo de + */
+    content: '\2795'; 
     display: block;
     margin-top: 10px;
     font-size: 1.2em;
 }
 
 details[open] summary::after {
-    content: '\2796'; /* Muda para - quando aberto */
+    content: '\2796'; 
 }
-
-
-
-@media (max-width: 450px) {
-    
-  .menu-list{
-    width: 100vw;
-    border: 5px solid rgb(4, 4, 4);
-    box-shadow: 5px 5px 5px black ;
-    
-   
-}
-
-.menu-list2{
-  display: none;
-}
-
-
-
-
-@media (min-width: 450px) {
-  .menu-list {
-   display: none;
-
-  }
-
-  
-}
-
-
-  
- 
-
-
-  div .eu{
-    margin-top: 15px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-
-  }
-  
-
-
-    
-  div .eu{
-    align-items: center;
-    justify-self: center;
-    justify-content: center;
-    display: flex;
-  }
-    
-  
-
-  
-
-
-    
-  div .eu{
-    align-items: center;
-    justify-self: center;
-    justify-content: center;
-    display: flex;
-  }
-    
-  
-  @media(max-width: 373px) {
-
-    
-
-
-    
-  div .eu{
-    align-items: center;
-    justify-self: center;
-    justify-content: center;
-    display: flex;
-  }
-    
-  }
 
 /* =========================================
    ESTILOS DO PERFIL (FOTO E APRESENTAÇÃO)
@@ -607,38 +438,30 @@ details[open] summary::after {
     margin: 30px auto 40px auto;
 }
 
-/* Container da foto */
 .foto-perfil-container {
     display: block;
     margin-bottom: 20px;
 }
 
-/* Estilo profissional da foto */
 .foto-perfil {
     width: 100%;
     max-width: 230px; 
-    aspect-ratio: 1 / 1; /* Força a imagem a ser um quadrado perfeito antes de arredondar */
-    object-fit: cover; /* Evita que a foto fique esticada ou achatada */
-    border-radius: 50%; /* Deixa a foto perfeitamente redonda */
-    
-    /* Efeito de "Anel" estilo LinkedIn Premium */
+    aspect-ratio: 1 / 1; 
+    object-fit: cover; 
+    border-radius: 50%; 
     padding: 6px; 
     background-color: white; 
-    border: 4px solid var(--cor4); /* Usa o azul escuro da sua paleta de cores */
-    
-    /* Sombra suave e elegante */
+    border: 4px solid var(--cor4); 
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); 
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-/* Efeito ao passar o mouse na foto */
 .foto-perfil:hover {
     transform: scale(1.05) translateY(-5px);
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
     border-color: var(--cor5);
 }
 
-/* Estilo do mini texto de apresentação */
 .texto-perfil h3 {
     color: var(--cor4);
     font-family: var(--fonte-padrao);
@@ -654,7 +477,7 @@ details[open] summary::after {
     font-size: 1.1em;
     line-height: 1.6;
     text-align: center;
-    text-indent: 0; /* Remove o recuo apenas deste parágrafo para ficar centralizado */
+    text-indent: 0; 
 }
 
 /* =========================================
@@ -662,9 +485,9 @@ details[open] summary::after {
    ========================================= */
 .container-badges {
     display: flex;
-    flex-wrap: wrap; /* Permite quebrar linha no celular */
+    flex-wrap: wrap; 
     justify-content: center;
-    gap: 15px; /* Espaço entre os botões */
+    gap: 15px; 
     margin-top: 10px;
     margin-bottom: 40px;
     padding: 0 10px;
@@ -672,46 +495,93 @@ details[open] summary::after {
 
 .badge-link {
     background-color: white;
-    color: var(--cor4); /* Azul escuro da sua paleta */
+    color: var(--cor4); 
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px; /* Espaço entre o ícone e o texto */
+    gap: 10px; 
     padding: 12px 25px;
-    border: 2px solid var(--cor2); /* Borda fina e elegante */
-    border-radius: 50px; /* Formato de "pílula" moderno */
+    border: 2px solid var(--cor2); 
+    border-radius: 50px; 
     font-weight: bold;
     font-size: 1.1em;
-    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1); 
     transition: all 0.3s ease;
-    flex: 1 1 auto; /* Faz os botões se ajustarem ao tamanho da tela */
-    max-width: 200px; /* Evita que fiquem gigantes em telas grandes */
+    flex: 1 1 auto; 
+    max-width: 200px; 
 }
 
-/* Oculta o ícone de link externo padrão que você tinha no CSS para este botão específico */
 .badge-link.externo::after {
     content: none;
 }
 
-/* Tamanho do ícone (FontAwesome) */
 .badge-link i {
     font-size: 1.4em;
 }
 
-/* Efeito ao passar o mouse */
 .badge-link:hover {
-    transform: translateY(-4px); /* Botão sobe um pouquinho */
-    background-color: var(--cor4); /* Fica azul escuro */
-    color: white; /* Texto fica branco */
+    transform: translateY(-4px); 
+    background-color: var(--cor4); 
+    color: white; 
     border-color: var(--cor4);
     box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Ajuste automático para celulares */
+/* =========================================
+   MEDIA QUERIES (AJUSTES PARA CELULAR)
+   ========================================= */
+
+@media (max-width: 520px) {
+    aside>ul{
+        list-style-position: inside;
+        columns: 1;
+        list-style-type: '\2714\00A0\00A0';
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+}
+
 @media (max-width: 500px) {
     .badge-link {
-        width: 100%; /* No celular, eles ocupam a largura toda, um embaixo do outro */
+        width: 100%; 
         max-width: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .menu-list{
+        width: 100vw;
+        border: 5px solid rgb(4, 4, 4);
+        box-shadow: 5px 5px 5px black ;
+    }
+    .menu-list2{
+        display: none;
+    }
+} /* <--- ESSA FOI A CHAVE QUE VOCÊ HAVIA APAGADO SEM QUERER! */
+
+@media (min-width: 450px) {
+    .menu-list {
+        display: none;
+    }
+}
+
+@media (max-width: 406px) {
+    aside>ul{
+        list-style-position: inside;
+        columns: 1;
+        list-style-type: '\2714\00A0\00A0';
+    }
+}
+
+@media (min-width: 350px) {
+    .pequeno {
+        display: none;     
+    }
+}
+
+@media (max-width: 350px) {
+    .grande {
+        display: none;
     }
 }
