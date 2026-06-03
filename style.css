@@ -656,3 +656,62 @@ details[open] summary::after {
     text-align: center;
     text-indent: 0; /* Remove o recuo apenas deste parágrafo para ficar centralizado */
 }
+
+/* =========================================
+   ESTILOS DOS BADGES (Idiomas, Formação, LinkedIn)
+   ========================================= */
+.container-badges {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar linha no celular */
+    justify-content: center;
+    gap: 15px; /* Espaço entre os botões */
+    margin-top: 10px;
+    margin-bottom: 40px;
+    padding: 0 10px;
+}
+
+.badge-link {
+    background-color: white;
+    color: var(--cor4); /* Azul escuro da sua paleta */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espaço entre o ícone e o texto */
+    padding: 12px 25px;
+    border: 2px solid var(--cor2); /* Borda fina e elegante */
+    border-radius: 50px; /* Formato de "pílula" moderno */
+    font-weight: bold;
+    font-size: 1.1em;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: all 0.3s ease;
+    flex: 1 1 auto; /* Faz os botões se ajustarem ao tamanho da tela */
+    max-width: 200px; /* Evita que fiquem gigantes em telas grandes */
+}
+
+/* Oculta o ícone de link externo padrão que você tinha no CSS para este botão específico */
+.badge-link.externo::after {
+    content: none;
+}
+
+/* Tamanho do ícone (FontAwesome) */
+.badge-link i {
+    font-size: 1.4em;
+}
+
+/* Efeito ao passar o mouse */
+.badge-link:hover {
+    transform: translateY(-4px); /* Botão sobe um pouquinho */
+    background-color: var(--cor4); /* Fica azul escuro */
+    color: white; /* Texto fica branco */
+    border-color: var(--cor4);
+    box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajuste automático para celulares */
+@media (max-width: 500px) {
+    .badge-link {
+        width: 100%; /* No celular, eles ocupam a largura toda, um embaixo do outro */
+        max-width: none;
+    }
+}
