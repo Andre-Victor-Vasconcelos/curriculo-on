@@ -26,36 +26,31 @@ body, html {
 }
 
 /* =========================================
-   SISTEMA DE SLIDES (SCROLL SNAP)
+   ESTRUTURA BASE E ROLAGEM FLUIDA
    ========================================= */
-.presentation-container {
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory; /* Força a parada exata no slide */
-    scroll-behavior: smooth;
-    /* Esconde a barra de rolagem no container */
-    scrollbar-width: none; 
-    -ms-overflow-style: none;
+body, html {
+    font-family: var(--fonte-principal);
+    color: var(--cinza-escuro);
+    background-color: var(--branco);
+    scroll-behavior: smooth; /* Rolagem suave nativa */
 }
-.presentation-container::-webkit-scrollbar {
-    display: none;
+
+.presentation-container {
+    width: 100%;
 }
 
 .slide {
-    height: 100vh;
-    width: 100vw;
-    scroll-snap-align: start; /* Onde o slide trava */
+    min-height: 100vh; /* Garante que ocupe a tela toda, mas cresce se o conteúdo for grande */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 10%; /* Margens laterais generosas */
+    padding: 80px 10%; /* Espaçamento generoso */
     position: relative;
 }
 
 .bg-gray {
     background-color: var(--cinza-fundo);
 }
-
 /* =========================================
    COMPONENTES E TIPOGRAFIA
    ========================================= */
