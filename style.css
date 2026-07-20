@@ -17,30 +17,29 @@
     box-sizing: border-box;
 }
 
-body, html {
-    height: 100%;
+html {
+    scroll-behavior: smooth; /* Faz o deslize ser suave ao clicar em links (se houver) */
+}
+
+body {
     font-family: var(--fonte-principal);
     color: var(--cinza-escuro);
     background-color: var(--branco);
-    overflow: hidden; /* Esconde a barra de rolagem padrão */
+    overflow-x: hidden; /* Impede rolagem horizontal indesejada */
+    /* Removido o overflow: hidden do eixo Y para a tela rolar solta */
 }
 
 /* =========================================
    ESTRUTURA BASE E ROLAGEM FLUIDA
    ========================================= */
-body, html {
-    font-family: var(--fonte-principal);
-    color: var(--cinza-escuro);
-    background-color: var(--branco);
-    scroll-behavior: smooth; /* Rolagem suave nativa */
-}
-
 .presentation-container {
     width: 100%;
+    display: block; /* Deixa o fluxo da página normal */
 }
 
 .slide {
-    min-height: 100vh; /* Garante que ocupe a tela toda, mas cresce se o conteúdo for grande */
+    min-height: 100vh; /* O slide ocupa a tela toda, mas pode crescer se precisar */
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
